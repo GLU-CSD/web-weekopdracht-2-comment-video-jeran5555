@@ -35,8 +35,24 @@ if(!empty($_POST)){
 <body>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=twI61ZGDECBr4ums" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+    <h2>hier komt het formulier om iets te sturen</h2>
+    <form action="" method="post">
+      <input type="text" placeholder=".. vul je naam in"name=name>
+      <br>
+      <textarea id="message" name="message" placeholder=".. vul je bericht in"></textarea>
+      <br>
+      <input type="submit" value="Verstuur">
+    </form>
+
+
     <h2>Hieronder komen reacties</h2>
     <p>Maak hier je eigen pagina van aan de hand van de opdracht</p>
+
+<?php
+ echo "<pre>".var_dump($getReactions)."</pre>";
+
+?>
+
 </body>
 </html>
 
